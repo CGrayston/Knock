@@ -3,15 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		585CFB3CBBD118D56732CABF /* Pods_Knock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C62C9851D513992C7305DE2C /* Pods_Knock.framework */; };
 		FFA052602488A03D00F7D482 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFA0525F2488A03D00F7D482 /* GoogleService-Info.plist */; };
+		FFA0527A2488AB6400F7D482 /* PitchObjectionEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA0526D2488AB6400F7D482 /* PitchObjectionEditorViewController.swift */; };
+		FFA0527B2488AB6400F7D482 /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA0526E2488AB6400F7D482 /* ChartsViewController.swift */; };
+		FFA0527C2488AB6400F7D482 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA0526F2488AB6400F7D482 /* SplashViewController.swift */; };
+		FFA0527D2488AB6400F7D482 /* TimesheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA052702488AB6400F7D482 /* TimesheetViewController.swift */; };
+		FFA0527E2488AB6400F7D482 /* CalendarPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA052712488AB6400F7D482 /* CalendarPageViewController.swift */; };
+		FFA0527F2488AB6400F7D482 /* HomePageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA052722488AB6400F7D482 /* HomePageTableViewController.swift */; };
+		FFA052802488AB6400F7D482 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA052732488AB6400F7D482 /* LoginViewController.swift */; };
+		FFA052812488AB6400F7D482 /* ObjectionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA052742488AB6400F7D482 /* ObjectionsTableViewController.swift */; };
+		FFA052822488AB6400F7D482 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA052752488AB6400F7D482 /* MainNavigationController.swift */; };
+		FFA052832488AB6400F7D482 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA052762488AB6400F7D482 /* SettingsViewController.swift */; };
+		FFA052842488AB6400F7D482 /* SelectedDateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA052782488AB6400F7D482 /* SelectedDateController.swift */; };
+		FFA052852488AB6400F7D482 /* DIPSController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA052792488AB6400F7D482 /* DIPSController.swift */; };
+		FFA0528A2488AB7300F7D482 /* DIPSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA052872488AB7300F7D482 /* DIPSTableViewCell.swift */; };
+		FFA0528B2488AB7300F7D482 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA052882488AB7300F7D482 /* DateCollectionViewCell.swift */; };
+		FFA0528C2488AB7300F7D482 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA052892488AB7300F7D482 /* TabBarViewController.swift */; };
+		FFA052952488AB7D00F7D482 /* RealmObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA0528F2488AB7D00F7D482 /* RealmObjects.swift */; };
+		FFA052962488AB7D00F7D482 /* RealmServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA052902488AB7D00F7D482 /* RealmServices.swift */; };
+		FFA052972488AB7D00F7D482 /* Ammo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA052912488AB7D00F7D482 /* Ammo.swift */; };
+		FFA052982488AB7D00F7D482 /* MacawChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA052922488AB7D00F7D482 /* MacawChartView.swift */; };
+		FFA052992488AB7D00F7D482 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA052932488AB7D00F7D482 /* Calendar.swift */; };
+		FFA0529B2488AD6300F7D482 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA0529A2488AD6300F7D482 /* Constants.swift */; };
 		FFA0551A24838D1D00771D83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA0551924838D1D00771D83 /* AppDelegate.swift */; };
 		FFA0551C24838D1D00771D83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA0551B24838D1D00771D83 /* SceneDelegate.swift */; };
-		FFA0551E24838D1D00771D83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA0551D24838D1D00771D83 /* ViewController.swift */; };
 		FFA0552124838D1D00771D83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA0551F24838D1D00771D83 /* Main.storyboard */; };
 		FFA0552324838D1E00771D83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA0552224838D1E00771D83 /* Assets.xcassets */; };
 		FFA0552624838D1E00771D83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA0552424838D1E00771D83 /* LaunchScreen.storyboard */; };
@@ -22,10 +42,30 @@
 		551FFC9FEB51D032EC39629A /* Pods-Knock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Knock.release.xcconfig"; path = "Target Support Files/Pods-Knock/Pods-Knock.release.xcconfig"; sourceTree = "<group>"; };
 		C62C9851D513992C7305DE2C /* Pods_Knock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Knock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA0525F2488A03D00F7D482 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FFA0526D2488AB6400F7D482 /* PitchObjectionEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchObjectionEditorViewController.swift; sourceTree = "<group>"; };
+		FFA0526E2488AB6400F7D482 /* ChartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
+		FFA0526F2488AB6400F7D482 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		FFA052702488AB6400F7D482 /* TimesheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimesheetViewController.swift; sourceTree = "<group>"; };
+		FFA052712488AB6400F7D482 /* CalendarPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarPageViewController.swift; sourceTree = "<group>"; };
+		FFA052722488AB6400F7D482 /* HomePageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageTableViewController.swift; sourceTree = "<group>"; };
+		FFA052732488AB6400F7D482 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FFA052742488AB6400F7D482 /* ObjectionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectionsTableViewController.swift; sourceTree = "<group>"; };
+		FFA052752488AB6400F7D482 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		FFA052762488AB6400F7D482 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FFA052782488AB6400F7D482 /* SelectedDateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedDateController.swift; sourceTree = "<group>"; };
+		FFA052792488AB6400F7D482 /* DIPSController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIPSController.swift; sourceTree = "<group>"; };
+		FFA052872488AB7300F7D482 /* DIPSTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIPSTableViewCell.swift; sourceTree = "<group>"; };
+		FFA052882488AB7300F7D482 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
+		FFA052892488AB7300F7D482 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		FFA0528F2488AB7D00F7D482 /* RealmObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmObjects.swift; sourceTree = "<group>"; };
+		FFA052902488AB7D00F7D482 /* RealmServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmServices.swift; sourceTree = "<group>"; };
+		FFA052912488AB7D00F7D482 /* Ammo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ammo.swift; sourceTree = "<group>"; };
+		FFA052922488AB7D00F7D482 /* MacawChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacawChartView.swift; sourceTree = "<group>"; };
+		FFA052932488AB7D00F7D482 /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		FFA0529A2488AD6300F7D482 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FFA0551624838D1D00771D83 /* Knock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA0551924838D1D00771D83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFA0551B24838D1D00771D83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FFA0551D24838D1D00771D83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FFA0552024838D1D00771D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFA0552224838D1E00771D83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFA0552524838D1E00771D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,7 +90,6 @@
 				006A1BF511B9E19130B1BF83 /* Pods-Knock.debug.xcconfig */,
 				551FFC9FEB51D032EC39629A /* Pods-Knock.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -60,6 +99,63 @@
 				C62C9851D513992C7305DE2C /* Pods_Knock.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFA0526B2488AB6400F7D482 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFA0526C2488AB6400F7D482 /* View Controllers */,
+				FFA052772488AB6400F7D482 /* Model Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FFA0526C2488AB6400F7D482 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFA0526D2488AB6400F7D482 /* PitchObjectionEditorViewController.swift */,
+				FFA0526E2488AB6400F7D482 /* ChartsViewController.swift */,
+				FFA0526F2488AB6400F7D482 /* SplashViewController.swift */,
+				FFA052702488AB6400F7D482 /* TimesheetViewController.swift */,
+				FFA052712488AB6400F7D482 /* CalendarPageViewController.swift */,
+				FFA052722488AB6400F7D482 /* HomePageTableViewController.swift */,
+				FFA052732488AB6400F7D482 /* LoginViewController.swift */,
+				FFA052742488AB6400F7D482 /* ObjectionsTableViewController.swift */,
+				FFA052752488AB6400F7D482 /* MainNavigationController.swift */,
+				FFA052762488AB6400F7D482 /* SettingsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FFA052772488AB6400F7D482 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFA052782488AB6400F7D482 /* SelectedDateController.swift */,
+				FFA052792488AB6400F7D482 /* DIPSController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		FFA052862488AB7300F7D482 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FFA052872488AB7300F7D482 /* DIPSTableViewCell.swift */,
+				FFA052882488AB7300F7D482 /* DateCollectionViewCell.swift */,
+				FFA052892488AB7300F7D482 /* TabBarViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FFA0528D2488AB7D00F7D482 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FFA0528F2488AB7D00F7D482 /* RealmObjects.swift */,
+				FFA052902488AB7D00F7D482 /* RealmServices.swift */,
+				FFA052912488AB7D00F7D482 /* Ammo.swift */,
+				FFA052922488AB7D00F7D482 /* MacawChartView.swift */,
+				FFA052932488AB7D00F7D482 /* Calendar.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		FFA0550D24838D1D00771D83 = {
@@ -83,8 +179,10 @@
 		FFA0551824838D1D00771D83 /* Knock */ = {
 			isa = PBXGroup;
 			children = (
+				FFA0528D2488AB7D00F7D482 /* Models */,
+				FFA052862488AB7300F7D482 /* Views */,
+				FFA0526B2488AB6400F7D482 /* Controllers */,
 				FFA0552D24838DA300771D83 /* Resources */,
-				FFA0551D24838D1D00771D83 /* ViewController.swift */,
 				FFA0551F24838D1D00771D83 /* Main.storyboard */,
 			);
 			path = Knock;
@@ -93,6 +191,7 @@
 		FFA0552D24838DA300771D83 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FFA0529A2488AD6300F7D482 /* Constants.swift */,
 				FFA0551924838D1D00771D83 /* AppDelegate.swift */,
 				FFA0551B24838D1D00771D83 /* SceneDelegate.swift */,
 				FFA0552224838D1E00771D83 /* Assets.xcassets */,
@@ -115,6 +214,7 @@
 				FFA0551324838D1D00771D83 /* Frameworks */,
 				FFA0551424838D1D00771D83 /* Resources */,
 				54BA6FDD2871A79BD2BEE872 /* [CP] Embed Pods Frameworks */,
+				69E883E62096E0148BDEB668 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,6 +312,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Knock/Pods-Knock-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		69E883E62096E0148BDEB668 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Knock/Pods-Knock-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Knock/Pods-Knock-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Knock/Pods-Knock-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -219,9 +336,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFA0551E24838D1D00771D83 /* ViewController.swift in Sources */,
+				FFA052962488AB7D00F7D482 /* RealmServices.swift in Sources */,
+				FFA052952488AB7D00F7D482 /* RealmObjects.swift in Sources */,
+				FFA052802488AB6400F7D482 /* LoginViewController.swift in Sources */,
 				FFA0551A24838D1D00771D83 /* AppDelegate.swift in Sources */,
+				FFA052842488AB6400F7D482 /* SelectedDateController.swift in Sources */,
+				FFA0527B2488AB6400F7D482 /* ChartsViewController.swift in Sources */,
+				FFA0529B2488AD6300F7D482 /* Constants.swift in Sources */,
+				FFA052822488AB6400F7D482 /* MainNavigationController.swift in Sources */,
 				FFA0551C24838D1D00771D83 /* SceneDelegate.swift in Sources */,
+				FFA0527F2488AB6400F7D482 /* HomePageTableViewController.swift in Sources */,
+				FFA052812488AB6400F7D482 /* ObjectionsTableViewController.swift in Sources */,
+				FFA0527A2488AB6400F7D482 /* PitchObjectionEditorViewController.swift in Sources */,
+				FFA052992488AB7D00F7D482 /* Calendar.swift in Sources */,
+				FFA052972488AB7D00F7D482 /* Ammo.swift in Sources */,
+				FFA052982488AB7D00F7D482 /* MacawChartView.swift in Sources */,
+				FFA0528C2488AB7300F7D482 /* TabBarViewController.swift in Sources */,
+				FFA0527E2488AB6400F7D482 /* CalendarPageViewController.swift in Sources */,
+				FFA0528A2488AB7300F7D482 /* DIPSTableViewCell.swift in Sources */,
+				FFA0527C2488AB6400F7D482 /* SplashViewController.swift in Sources */,
+				FFA0528B2488AB7300F7D482 /* DateCollectionViewCell.swift in Sources */,
+				FFA0527D2488AB6400F7D482 /* TimesheetViewController.swift in Sources */,
+				FFA052832488AB6400F7D482 /* SettingsViewController.swift in Sources */,
+				FFA052852488AB6400F7D482 /* DIPSController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
