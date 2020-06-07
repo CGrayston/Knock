@@ -6,8 +6,6 @@ PODS:
   - AppAuth/ExternalUserAgent (1.3.1)
   - Firebase (6.25.0):
     - Firebase/Core (= 6.25.0)
-  - Firebase/Analytics (6.25.0):
-    - Firebase/Core
   - Firebase/Auth (6.25.0):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 6.5.3)
@@ -105,16 +103,17 @@ PODS:
     - nanopb/encode (= 1.30905.0)
   - nanopb/decode (1.30905.0)
   - nanopb/encode (1.30905.0)
+  - ObjectMapper (4.2.0)
   - PromisesObjC (1.2.8)
   - SWXMLHash (5.0.1)
 
 DEPENDENCIES:
   - Firebase
-  - Firebase/Analytics
   - Firebase/Auth
   - Firebase/Database
   - GoogleSignIn
   - Macaw (= 0.9.5)
+  - ObjectMapper (~> 4.2)
 
 SPEC REPOS:
   trunk:
@@ -138,6 +137,7 @@ SPEC REPOS:
     - leveldb-library
     - Macaw
     - nanopb
+    - ObjectMapper
     - PromisesObjC
     - SWXMLHash
 
@@ -162,9 +162,10 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   Macaw: 10bf9e327cb75f24e3225d5229a80ed544df85f0
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   SWXMLHash: 9cc0c2e4807926c74377724aa8722ee5707a0485
 
-PODFILE CHECKSUM: 3959057c9511b4b7c886e232e0c822067e04127b
+PODFILE CHECKSUM: 16530b2284d61357d8170e53fae1f94a9c4d1d06
 
 COCOAPODS: 1.9.1

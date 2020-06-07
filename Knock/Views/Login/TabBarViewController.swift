@@ -10,6 +10,7 @@ import UIKit
 
 class TabBarViewController: UITabBarController {
     
+    var user: User?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,7 @@ class TabBarViewController: UITabBarController {
         // Inject realmServices to HomePage
         let navController = self.viewControllers![0] as! UINavigationController
         let navVC = navController.topViewController as! HomePageTableViewController
-        //navVC.realmServices = realmServices
+        navVC.user = user
         
         // Inject realmServices in TimesheetViewController
         let timesheetNavigationVC = self.viewControllers![1] as! UINavigationController

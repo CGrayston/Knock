@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		585CFB3CBBD118D56732CABF /* Pods_Knock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C62C9851D513992C7305DE2C /* Pods_Knock.framework */; };
+		FF8CEF82248C57C80083E0F3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CEF81248C57C80083E0F3 /* User.swift */; };
+		FF8CEF84248C5D460083E0F3 /* DateUTCTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CEF83248C5D460083E0F3 /* DateUTCTransform.swift */; };
+		FF8CEF91248D60550083E0F3 /* DIPSUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CEF90248D60550083E0F3 /* DIPSUseCase.swift */; };
+		FF8CEF93248D62920083E0F3 /* DIPSRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CEF92248D62920083E0F3 /* DIPSRepository.swift */; };
 		FFA052602488A03D00F7D482 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFA0525F2488A03D00F7D482 /* GoogleService-Info.plist */; };
 		FFA0527A2488AB6400F7D482 /* PitchObjectionEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA0526D2488AB6400F7D482 /* PitchObjectionEditorViewController.swift */; };
 		FFA0527B2488AB6400F7D482 /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA0526E2488AB6400F7D482 /* ChartsViewController.swift */; };
@@ -19,8 +23,6 @@
 		FFA052812488AB6400F7D482 /* ObjectionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA052742488AB6400F7D482 /* ObjectionsTableViewController.swift */; };
 		FFA052822488AB6400F7D482 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA052752488AB6400F7D482 /* MainNavigationController.swift */; };
 		FFA052832488AB6400F7D482 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA052762488AB6400F7D482 /* SettingsViewController.swift */; };
-		FFA052842488AB6400F7D482 /* SelectedDateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA052782488AB6400F7D482 /* SelectedDateController.swift */; };
-		FFA052852488AB6400F7D482 /* DIPSController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA052792488AB6400F7D482 /* DIPSController.swift */; };
 		FFA0528A2488AB7300F7D482 /* DIPSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA052872488AB7300F7D482 /* DIPSTableViewCell.swift */; };
 		FFA0528B2488AB7300F7D482 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA052882488AB7300F7D482 /* DateCollectionViewCell.swift */; };
 		FFA0528C2488AB7300F7D482 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA052892488AB7300F7D482 /* TabBarViewController.swift */; };
@@ -41,6 +43,10 @@
 		006A1BF511B9E19130B1BF83 /* Pods-Knock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Knock.debug.xcconfig"; path = "Target Support Files/Pods-Knock/Pods-Knock.debug.xcconfig"; sourceTree = "<group>"; };
 		551FFC9FEB51D032EC39629A /* Pods-Knock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Knock.release.xcconfig"; path = "Target Support Files/Pods-Knock/Pods-Knock.release.xcconfig"; sourceTree = "<group>"; };
 		C62C9851D513992C7305DE2C /* Pods_Knock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Knock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF8CEF81248C57C80083E0F3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FF8CEF83248C5D460083E0F3 /* DateUTCTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUTCTransform.swift; sourceTree = "<group>"; };
+		FF8CEF90248D60550083E0F3 /* DIPSUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIPSUseCase.swift; sourceTree = "<group>"; };
+		FF8CEF92248D62920083E0F3 /* DIPSRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIPSRepository.swift; sourceTree = "<group>"; };
 		FFA0525F2488A03D00F7D482 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FFA0526D2488AB6400F7D482 /* PitchObjectionEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchObjectionEditorViewController.swift; sourceTree = "<group>"; };
 		FFA0526E2488AB6400F7D482 /* ChartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
@@ -52,8 +58,6 @@
 		FFA052742488AB6400F7D482 /* ObjectionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectionsTableViewController.swift; sourceTree = "<group>"; };
 		FFA052752488AB6400F7D482 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		FFA052762488AB6400F7D482 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		FFA052782488AB6400F7D482 /* SelectedDateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedDateController.swift; sourceTree = "<group>"; };
-		FFA052792488AB6400F7D482 /* DIPSController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIPSController.swift; sourceTree = "<group>"; };
 		FFA052872488AB7300F7D482 /* DIPSTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIPSTableViewCell.swift; sourceTree = "<group>"; };
 		FFA052882488AB7300F7D482 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
 		FFA052892488AB7300F7D482 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -101,47 +105,111 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FFA0526B2488AB6400F7D482 /* Controllers */ = {
+		FF8CEF85248CC3CA0083E0F3 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
-				FFA0526C2488AB6400F7D482 /* View Controllers */,
-				FFA052772488AB6400F7D482 /* Model Controllers */,
+				FFA052722488AB6400F7D482 /* HomePageTableViewController.swift */,
+				FF8CEF86248CC3DF0083E0F3 /* Cells */,
 			);
-			path = Controllers;
+			path = HomePage;
 			sourceTree = "<group>";
 		};
-		FFA0526C2488AB6400F7D482 /* View Controllers */ = {
+		FF8CEF86248CC3DF0083E0F3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FFA052872488AB7300F7D482 /* DIPSTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FF8CEF87248CC47C0083E0F3 /* Objections */ = {
 			isa = PBXGroup;
 			children = (
 				FFA0526D2488AB6400F7D482 /* PitchObjectionEditorViewController.swift */,
-				FFA0526E2488AB6400F7D482 /* ChartsViewController.swift */,
-				FFA0526F2488AB6400F7D482 /* SplashViewController.swift */,
-				FFA052702488AB6400F7D482 /* TimesheetViewController.swift */,
-				FFA052712488AB6400F7D482 /* CalendarPageViewController.swift */,
-				FFA052722488AB6400F7D482 /* HomePageTableViewController.swift */,
-				FFA052732488AB6400F7D482 /* LoginViewController.swift */,
 				FFA052742488AB6400F7D482 /* ObjectionsTableViewController.swift */,
-				FFA052752488AB6400F7D482 /* MainNavigationController.swift */,
-				FFA052762488AB6400F7D482 /* SettingsViewController.swift */,
 			);
-			path = "View Controllers";
+			path = Objections;
 			sourceTree = "<group>";
 		};
-		FFA052772488AB6400F7D482 /* Model Controllers */ = {
+		FF8CEF88248CC47F0083E0F3 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				FFA052782488AB6400F7D482 /* SelectedDateController.swift */,
-				FFA052792488AB6400F7D482 /* DIPSController.swift */,
+				FFA052712488AB6400F7D482 /* CalendarPageViewController.swift */,
+				FF8CEF8A248CC53F0083E0F3 /* Cells */,
 			);
-			path = "Model Controllers";
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		FF8CEF89248CC4840083E0F3 /* Timesheet */ = {
+			isa = PBXGroup;
+			children = (
+				FFA052702488AB6400F7D482 /* TimesheetViewController.swift */,
+			);
+			path = Timesheet;
+			sourceTree = "<group>";
+		};
+		FF8CEF8A248CC53F0083E0F3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FFA052882488AB7300F7D482 /* DateCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FF8CEF8B248CC5820083E0F3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FFA0526F2488AB6400F7D482 /* SplashViewController.swift */,
+				FFA052732488AB6400F7D482 /* LoginViewController.swift */,
+				FFA052752488AB6400F7D482 /* MainNavigationController.swift */,
+				FFA052892488AB7300F7D482 /* TabBarViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FF8CEF8C248CC5A40083E0F3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FFA052762488AB6400F7D482 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		FF8CEF8D248CC5F30083E0F3 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				FFA0526E2488AB6400F7D482 /* ChartsViewController.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		FF8CEF8E248D5FD50083E0F3 /* Use Cases */ = {
+			isa = PBXGroup;
+			children = (
+				FF8CEF90248D60550083E0F3 /* DIPSUseCase.swift */,
+			);
+			path = "Use Cases";
+			sourceTree = "<group>";
+		};
+		FF8CEF8F248D5FE60083E0F3 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				FF8CEF92248D62920083E0F3 /* DIPSRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		FFA052862488AB7300F7D482 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FFA052872488AB7300F7D482 /* DIPSTableViewCell.swift */,
-				FFA052882488AB7300F7D482 /* DateCollectionViewCell.swift */,
-				FFA052892488AB7300F7D482 /* TabBarViewController.swift */,
+				FFA0551F24838D1D00771D83 /* Main.storyboard */,
+				FF8CEF8D248CC5F30083E0F3 /* Chart */,
+				FF8CEF8B248CC5820083E0F3 /* Login */,
+				FF8CEF85248CC3CA0083E0F3 /* HomePage */,
+				FF8CEF89248CC4840083E0F3 /* Timesheet */,
+				FF8CEF88248CC47F0083E0F3 /* Calendar */,
+				FF8CEF87248CC47C0083E0F3 /* Objections */,
+				FF8CEF8C248CC5A40083E0F3 /* Settings */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -154,6 +222,7 @@
 				FFA052912488AB7D00F7D482 /* Ammo.swift */,
 				FFA052922488AB7D00F7D482 /* MacawChartView.swift */,
 				FFA052932488AB7D00F7D482 /* Calendar.swift */,
+				FF8CEF81248C57C80083E0F3 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -181,9 +250,9 @@
 			children = (
 				FFA0528D2488AB7D00F7D482 /* Models */,
 				FFA052862488AB7300F7D482 /* Views */,
-				FFA0526B2488AB6400F7D482 /* Controllers */,
+				FF8CEF8E248D5FD50083E0F3 /* Use Cases */,
+				FF8CEF8F248D5FE60083E0F3 /* Repository */,
 				FFA0552D24838DA300771D83 /* Resources */,
-				FFA0551F24838D1D00771D83 /* Main.storyboard */,
 			);
 			path = Knock;
 			sourceTree = "<group>";
@@ -198,6 +267,7 @@
 				FFA0552424838D1E00771D83 /* LaunchScreen.storyboard */,
 				FFA0525F2488A03D00F7D482 /* GoogleService-Info.plist */,
 				FFA0552724838D1E00771D83 /* Info.plist */,
+				FF8CEF83248C5D460083E0F3 /* DateUTCTransform.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -340,8 +410,8 @@
 				FFA052952488AB7D00F7D482 /* RealmObjects.swift in Sources */,
 				FFA052802488AB6400F7D482 /* LoginViewController.swift in Sources */,
 				FFA0551A24838D1D00771D83 /* AppDelegate.swift in Sources */,
-				FFA052842488AB6400F7D482 /* SelectedDateController.swift in Sources */,
 				FFA0527B2488AB6400F7D482 /* ChartsViewController.swift in Sources */,
+				FF8CEF91248D60550083E0F3 /* DIPSUseCase.swift in Sources */,
 				FFA0529B2488AD6300F7D482 /* Constants.swift in Sources */,
 				FFA052822488AB6400F7D482 /* MainNavigationController.swift in Sources */,
 				FFA0551C24838D1D00771D83 /* SceneDelegate.swift in Sources */,
@@ -349,6 +419,7 @@
 				FFA052812488AB6400F7D482 /* ObjectionsTableViewController.swift in Sources */,
 				FFA0527A2488AB6400F7D482 /* PitchObjectionEditorViewController.swift in Sources */,
 				FFA052992488AB7D00F7D482 /* Calendar.swift in Sources */,
+				FF8CEF84248C5D460083E0F3 /* DateUTCTransform.swift in Sources */,
 				FFA052972488AB7D00F7D482 /* Ammo.swift in Sources */,
 				FFA052982488AB7D00F7D482 /* MacawChartView.swift in Sources */,
 				FFA0528C2488AB7300F7D482 /* TabBarViewController.swift in Sources */,
@@ -356,9 +427,10 @@
 				FFA0528A2488AB7300F7D482 /* DIPSTableViewCell.swift in Sources */,
 				FFA0527C2488AB6400F7D482 /* SplashViewController.swift in Sources */,
 				FFA0528B2488AB7300F7D482 /* DateCollectionViewCell.swift in Sources */,
+				FF8CEF82248C57C80083E0F3 /* User.swift in Sources */,
 				FFA0527D2488AB6400F7D482 /* TimesheetViewController.swift in Sources */,
 				FFA052832488AB6400F7D482 /* SettingsViewController.swift in Sources */,
-				FFA052852488AB6400F7D482 /* DIPSController.swift in Sources */,
+				FF8CEF93248D62920083E0F3 /* DIPSRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

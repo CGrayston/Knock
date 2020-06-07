@@ -22,6 +22,7 @@ class HomePageTableViewController: UITableViewController, DIPSTableViewCellDeleg
     // MARK: - Properties
     
     // MARK: - Data Model
+    var user: User?
     
     // MARK: - Initializers
     deinit {
@@ -33,6 +34,10 @@ class HomePageTableViewController: UITableViewController, DIPSTableViewCellDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        guard let user = user else {
+            return
+        }
+        print("Chris: \(user)")
         // Set up home page
         setUpHomePage()
         overrideUserInterfaceStyle = .light
