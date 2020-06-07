@@ -14,5 +14,7 @@ target 'Knock' do
   # https://firebase.google.com/docs/ios/setup#available-pods
 
   pod "Macaw", "0.9.5"
+  
+  pod 'ObjectMapper', '~> 4.2'
 
 end
