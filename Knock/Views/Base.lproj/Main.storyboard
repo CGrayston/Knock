@@ -11,7 +11,7 @@
         <!--Splash View Controller-->
         <scene sceneID="uUb-mF-eJH">
             <objects>
-                <viewController id="YLX-Jn-e79" customClass="SplashViewController" customModule="Knock" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SplashVC" id="YLX-Jn-e79" customClass="SplashViewController" customModule="Knock" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a21-DH-vaI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

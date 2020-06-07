@@ -14,13 +14,16 @@ import GoogleSignIn
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var ref: DatabaseReference! // TODO: Not sure if we need this
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         // Use Firebase library to configure APIs
         FirebaseApp.configure()
 
-        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+        // TODO: Not sure if we need these
+        Database.database().reference()
+        //GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         
         return true
     }
