@@ -20,6 +20,7 @@ class HomePageTableViewController: UITableViewController, DIPSTableViewCellDeleg
     
     
     // MARK: - Properties
+    var viewModel: HomePageViewModel!
     
     // MARK: - Data Model
     var user: User?
@@ -33,7 +34,7 @@ class HomePageTableViewController: UITableViewController, DIPSTableViewCellDeleg
     // MARK: - Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        bind(to: viewModel)
         guard let user = user else {
             return
         }
@@ -56,6 +57,13 @@ class HomePageTableViewController: UITableViewController, DIPSTableViewCellDeleg
         
     }
     
+    private func bind(to viewModel: HomePageViewModel) {
+        self.viewModel.categories.bind = { [weak self] categories in
+            // DIPS Categories changed - Reload
+            self?.tableView.reloadData()
+            print(categories)
+        }
+    }
     /*
      // MARK: - Navigation
      
@@ -158,7 +166,7 @@ class HomePageTableViewController: UITableViewController, DIPSTableViewCellDeleg
     
     // MARK: - Actions
     
-    @IBAction func previousDate(_ sender: Any) {
+    @IBAction func previousDateButtonClicked(_ sender: Any) {
 //        // Get date value for one day prior to current selected date
 //        guard let unwrappedSelectedDate = realmServices.selectedDate else {
 //            print("Error unwrapping selected date")
@@ -176,7 +184,8 @@ class HomePageTableViewController: UITableViewController, DIPSTableViewCellDeleg
 //        realmServices.selectedDate = newDate
     }
     
-    @IBAction func nextDate(_ sender: Any) {
+    @IBAction func nextDateButtonClicked(_ sender: Any) {
+        viewModel.nextDate()
 //        // Get date value for the day after the current selected date
 //        guard let unwrappedSelectedDate = realmServices.selectedDate else {
 //            print("Error unwrapping selected date")
@@ -224,19 +233,21 @@ extension HomePageTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // Return 9 because that's how many categories we want
-        return 9
+        guard let categories = viewModel.categories.value else {
+            return 0
+        }
+        return categories.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "category", for: indexPath) as! DIPSTableViewCell
+//        var cell = tableView.dequeueReusableCell(withIdentifier: "category", for: indexPath) as! DIPSTableViewCell
         
-        // Configure custom cell
-        cell.indexRow = indexPath.row
-        //cell.realmServices = realmServices
-        cell.delegate = self
-        
-        
+//        // Configure custom cell
+//        cell.indexRow = indexPath.row
+//        //cell.realmServices = realmServices
+//        cell.delegate = self
+        var cell = tableView.dequeueReusableCell(withIdentifier: "category", for: indexPath)
+        cell.textLabel?.text = "Hey"
         //cell.configure(with: currentDIPS, indexRow: indexPath.row)
         
         return cell
