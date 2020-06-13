@@ -22,6 +22,7 @@ class TabBarViewController: UITabBarController {
         let navController = self.viewControllers![0] as! UINavigationController
         let navVC = navController.topViewController as! HomePageTableViewController
         navVC.user = user
+        navVC.viewModel = HomePageViewModel()
         
         // Inject realmServices in TimesheetViewController
         let timesheetNavigationVC = self.viewControllers![1] as! UINavigationController

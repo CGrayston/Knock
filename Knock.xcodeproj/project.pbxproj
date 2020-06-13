@@ -10,7 +10,7 @@
 		585CFB3CBBD118D56732CABF /* Pods_Knock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C62C9851D513992C7305DE2C /* Pods_Knock.framework */; };
 		FF8CEF82248C57C80083E0F3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CEF81248C57C80083E0F3 /* User.swift */; };
 		FF8CEF84248C5D460083E0F3 /* DateUTCTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CEF83248C5D460083E0F3 /* DateUTCTransform.swift */; };
-		FF8CEF91248D60550083E0F3 /* DIPSUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CEF90248D60550083E0F3 /* DIPSUseCase.swift */; };
+		FF8CEF91248D60550083E0F3 /* SelectedDateUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CEF90248D60550083E0F3 /* SelectedDateUseCase.swift */; };
 		FF8CEF93248D62920083E0F3 /* DIPSRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CEF92248D62920083E0F3 /* DIPSRepository.swift */; };
 		FFA052602488A03D00F7D482 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFA0525F2488A03D00F7D482 /* GoogleService-Info.plist */; };
 		FFA0527A2488AB6400F7D482 /* PitchObjectionEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA0526D2488AB6400F7D482 /* PitchObjectionEditorViewController.swift */; };
@@ -37,6 +37,10 @@
 		FFA0552124838D1D00771D83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA0551F24838D1D00771D83 /* Main.storyboard */; };
 		FFA0552324838D1E00771D83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA0552224838D1E00771D83 /* Assets.xcassets */; };
 		FFA0552624838D1E00771D83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA0552424838D1E00771D83 /* LaunchScreen.storyboard */; };
+		FFCA2D1F24933A4A00E659D0 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA2D1E24933A4A00E659D0 /* Dynamic.swift */; };
+		FFCA2D2124933C0000E659D0 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA2D2024933C0000E659D0 /* Category.swift */; };
+		FFCA2D23249340C100E659D0 /* CategoryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA2D22249340C100E659D0 /* CategoryUseCase.swift */; };
+		FFCA2D25249350FE00E659D0 /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA2D24249350FE00E659D0 /* HomePageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +49,7 @@
 		C62C9851D513992C7305DE2C /* Pods_Knock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Knock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF8CEF81248C57C80083E0F3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FF8CEF83248C5D460083E0F3 /* DateUTCTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUTCTransform.swift; sourceTree = "<group>"; };
-		FF8CEF90248D60550083E0F3 /* DIPSUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIPSUseCase.swift; sourceTree = "<group>"; };
+		FF8CEF90248D60550083E0F3 /* SelectedDateUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedDateUseCase.swift; sourceTree = "<group>"; };
 		FF8CEF92248D62920083E0F3 /* DIPSRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIPSRepository.swift; sourceTree = "<group>"; };
 		FFA0525F2488A03D00F7D482 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FFA0526D2488AB6400F7D482 /* PitchObjectionEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchObjectionEditorViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +78,10 @@
 		FFA0552224838D1E00771D83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFA0552524838D1E00771D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFA0552724838D1E00771D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFCA2D1E24933A4A00E659D0 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		FFCA2D2024933C0000E659D0 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		FFCA2D22249340C100E659D0 /* CategoryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryUseCase.swift; sourceTree = "<group>"; };
+		FFCA2D24249350FE00E659D0 /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +116,8 @@
 		FF8CEF85248CC3CA0083E0F3 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
-				FFA052722488AB6400F7D482 /* HomePageTableViewController.swift */,
+				FFCA2D1B2493381900E659D0 /* ViewModel */,
+				FFCA2D1A2493380200E659D0 /* View */,
 				FF8CEF86248CC3DF0083E0F3 /* Cells */,
 			);
 			path = HomePage;
@@ -183,12 +192,13 @@
 			path = Chart;
 			sourceTree = "<group>";
 		};
-		FF8CEF8E248D5FD50083E0F3 /* Use Cases */ = {
+		FF8CEF8E248D5FD50083E0F3 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				FF8CEF90248D60550083E0F3 /* DIPSUseCase.swift */,
+				FF8CEF90248D60550083E0F3 /* SelectedDateUseCase.swift */,
+				FFCA2D22249340C100E659D0 /* CategoryUseCase.swift */,
 			);
-			path = "Use Cases";
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 		FF8CEF8F248D5FE60083E0F3 /* Repository */ = {
@@ -202,10 +212,9 @@
 		FFA052862488AB7300F7D482 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FFA0551F24838D1D00771D83 /* Main.storyboard */,
+				FF8CEF85248CC3CA0083E0F3 /* HomePage */,
 				FF8CEF8D248CC5F30083E0F3 /* Chart */,
 				FF8CEF8B248CC5820083E0F3 /* Login */,
-				FF8CEF85248CC3CA0083E0F3 /* HomePage */,
 				FF8CEF89248CC4840083E0F3 /* Timesheet */,
 				FF8CEF88248CC47F0083E0F3 /* Calendar */,
 				FF8CEF87248CC47C0083E0F3 /* Objections */,
@@ -222,7 +231,6 @@
 				FFA052912488AB7D00F7D482 /* Ammo.swift */,
 				FFA052922488AB7D00F7D482 /* MacawChartView.swift */,
 				FFA052932488AB7D00F7D482 /* Calendar.swift */,
-				FF8CEF81248C57C80083E0F3 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -248,11 +256,10 @@
 		FFA0551824838D1D00771D83 /* Knock */ = {
 			isa = PBXGroup;
 			children = (
-				FFA0528D2488AB7D00F7D482 /* Models */,
+				FFCA2D182493377300E659D0 /* Domain */,
 				FFA052862488AB7300F7D482 /* Views */,
-				FF8CEF8E248D5FD50083E0F3 /* Use Cases */,
-				FF8CEF8F248D5FE60083E0F3 /* Repository */,
 				FFA0552D24838DA300771D83 /* Resources */,
+				FFA0528D2488AB7D00F7D482 /* Models */,
 			);
 			path = Knock;
 			sourceTree = "<group>";
@@ -260,6 +267,7 @@
 		FFA0552D24838DA300771D83 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FFA0551F24838D1D00771D83 /* Main.storyboard */,
 				FFA0529A2488AD6300F7D482 /* Constants.swift */,
 				FFA0551924838D1D00771D83 /* AppDelegate.swift */,
 				FFA0551B24838D1D00771D83 /* SceneDelegate.swift */,
@@ -268,8 +276,44 @@
 				FFA0525F2488A03D00F7D482 /* GoogleService-Info.plist */,
 				FFA0552724838D1E00771D83 /* Info.plist */,
 				FF8CEF83248C5D460083E0F3 /* DateUTCTransform.swift */,
+				FFCA2D1E24933A4A00E659D0 /* Dynamic.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		FFCA2D182493377300E659D0 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FFCA2D19249337A300E659D0 /* Entities */,
+				FF8CEF8E248D5FD50083E0F3 /* UseCases */,
+				FF8CEF8F248D5FE60083E0F3 /* Repository */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FFCA2D19249337A300E659D0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				FF8CEF81248C57C80083E0F3 /* User.swift */,
+				FFCA2D2024933C0000E659D0 /* Category.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		FFCA2D1A2493380200E659D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFA052722488AB6400F7D482 /* HomePageTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FFCA2D1B2493381900E659D0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FFCA2D24249350FE00E659D0 /* HomePageViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,26 +455,30 @@
 				FFA052802488AB6400F7D482 /* LoginViewController.swift in Sources */,
 				FFA0551A24838D1D00771D83 /* AppDelegate.swift in Sources */,
 				FFA0527B2488AB6400F7D482 /* ChartsViewController.swift in Sources */,
-				FF8CEF91248D60550083E0F3 /* DIPSUseCase.swift in Sources */,
+				FF8CEF91248D60550083E0F3 /* SelectedDateUseCase.swift in Sources */,
 				FFA0529B2488AD6300F7D482 /* Constants.swift in Sources */,
 				FFA052822488AB6400F7D482 /* MainNavigationController.swift in Sources */,
 				FFA0551C24838D1D00771D83 /* SceneDelegate.swift in Sources */,
 				FFA0527F2488AB6400F7D482 /* HomePageTableViewController.swift in Sources */,
 				FFA052812488AB6400F7D482 /* ObjectionsTableViewController.swift in Sources */,
 				FFA0527A2488AB6400F7D482 /* PitchObjectionEditorViewController.swift in Sources */,
+				FFCA2D25249350FE00E659D0 /* HomePageViewModel.swift in Sources */,
 				FFA052992488AB7D00F7D482 /* Calendar.swift in Sources */,
 				FF8CEF84248C5D460083E0F3 /* DateUTCTransform.swift in Sources */,
 				FFA052972488AB7D00F7D482 /* Ammo.swift in Sources */,
 				FFA052982488AB7D00F7D482 /* MacawChartView.swift in Sources */,
 				FFA0528C2488AB7300F7D482 /* TabBarViewController.swift in Sources */,
 				FFA0527E2488AB6400F7D482 /* CalendarPageViewController.swift in Sources */,
+				FFCA2D23249340C100E659D0 /* CategoryUseCase.swift in Sources */,
 				FFA0528A2488AB7300F7D482 /* DIPSTableViewCell.swift in Sources */,
 				FFA0527C2488AB6400F7D482 /* SplashViewController.swift in Sources */,
+				FFCA2D1F24933A4A00E659D0 /* Dynamic.swift in Sources */,
 				FFA0528B2488AB7300F7D482 /* DateCollectionViewCell.swift in Sources */,
 				FF8CEF82248C57C80083E0F3 /* User.swift in Sources */,
 				FFA0527D2488AB6400F7D482 /* TimesheetViewController.swift in Sources */,
 				FFA052832488AB6400F7D482 /* SettingsViewController.swift in Sources */,
 				FF8CEF93248D62920083E0F3 /* DIPSRepository.swift in Sources */,
+				FFCA2D2124933C0000E659D0 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,11 @@
 
 import Foundation
 
+protocol DIPSRepositoryProtocol {
+    func getTodaysDIPS(success: @escaping () -> Void, failure: @escaping (NSError) -> Void)
+    
+   // func update
+}
 
 class DIPSRepository {
     
