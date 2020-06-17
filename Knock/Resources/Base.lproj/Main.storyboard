@@ -178,6 +178,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="7ND-PB-2BX">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addCategoryButtonClicked:" destination="rNr-6C-0ec" id="snI-hd-q6y"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -1010,7 +1013,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OvO-4h-cxC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="bVr-Ma-5Hu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-3407" y="3353"/>
+            <point key="canvasLocation" x="-3407" y="3329"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="Bod-1L-7vq">

@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-struct Category: Mappable {
+struct CategoryResponse: Mappable {
     var uid: String?
     var name: String?
     var count: Int?

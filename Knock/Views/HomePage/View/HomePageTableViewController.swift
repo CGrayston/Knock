@@ -22,23 +22,21 @@ class HomePageTableViewController: UITableViewController, DIPSTableViewCellDeleg
     // MARK: - Properties
     var viewModel: HomePageViewModel!
     
-    // MARK: - Data Model
-    var user: User?
+    let alertService = AlertService()
     
     // MARK: - Initializers
-    deinit {
-        // TODO - Figure out if we really need this
-        NotificationCenter.default.removeObserver(self)
-    }
+
     
     // MARK: - Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         bind(to: viewModel)
-        guard let user = user else {
-            return
-        }
-        print("Chris: \(user)")
+
+        //        guard let user = user else {
+        //            return
+        //        }
+        //        print("Chris: \(user)")
+        
         // Set up home page
         setUpHomePage()
         overrideUserInterfaceStyle = .light
@@ -165,6 +163,12 @@ class HomePageTableViewController: UITableViewController, DIPSTableViewCellDeleg
     
     
     // MARK: - Actions
+    
+    
+    @IBAction func addCategoryButtonClicked(_ sender: Any) {
+        let alertVC = alertService.alert()
+        present(alertVC, animated: true)
+    }
     
     @IBAction func previousDateButtonClicked(_ sender: Any) {
 //        // Get date value for one day prior to current selected date

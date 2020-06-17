@@ -22,6 +22,17 @@ protocol SelectedDateUseCaseProtocol {
 }
 
 class SelectedDateUseCase: SelectedDateUseCaseProtocol {
+    
+    // MARK: - Properties
+    var user: UserResponse
+    var workDay: WorkDayResponse?
+    
+    // MARK: - Initilization
+    init(user: UserResponse, workDay: WorkDayResponse?) {
+        self.user = user
+        self.workDay = workDay
+    }
+    
     func createNewCategory(categoryName: String, success: @escaping () -> Void, failure: @escaping (NSError) -> Void) {
         // TODO
     }

@@ -14,8 +14,7 @@ import ObjectMapper
 class LoginViewController: UIViewController {
     
     let dispatchGroup = DispatchGroup()
-    var ref: DatabaseReference!
-    var user: User?
+    var userResponse: UserResponse?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +23,6 @@ class LoginViewController: UIViewController {
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance()?.presentingViewController = self
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
-        
-        ref = Database.database().reference()
     }
 }
 
@@ -65,30 +62,28 @@ extension LoginViewController: GIDSignInDelegate {
                 
                 // Create new user entry in Firebase
                 self.dispatchGroup.enter()
-                self.ref.child("users").child(currentUser.uid).setValue([
-                    "uid": currentUser.uid,
-                    "imageId": imageId,
-                    "email": email,
-                    "createdAt": createdAt,
-                    "signedIn": signedIn,
-                ])
-                self.dispatchGroup.leave()
-                
-                // Create
+                FirebaseManager.sharedInstance.createNewUser(uid: currentUser.uid, imageId: imageId, email: email, createdAt: createdAt, signedIn: signedIn) {
+                    self.dispatchGroup.leave()
+                }
             } else {
                 // Not first login code goes here
 
             }
             
             self.dispatchGroup.enter()
-            self.ref.child("users").child(currentUser.uid).observe(DataEventType.value) { (snapshot) in
-                self.user = Mapper<User>().map(JSONObject: snapshot.value)
-                self.dispatchGroup.leave()
-            }
+            FirebaseManager.sharedInstance.getUser(userUID: currentUser.uid, completion: { (result) in
+                switch result {
+                case .success(let userResponse):
+                    self.userResponse = userResponse
+                    self.dispatchGroup.leave()
+                case .failure(let error):
+                    print("Error: \(error)")
+                }
+            })
             
             self.dispatchGroup.notify(queue: .main) {
                 let tabBarVC = self.storyboard?.instantiateViewController(identifier: "TabBarVC") as? TabBarViewController
-                tabBarVC?.user = self.user
+                tabBarVC?.userResponse = self.userResponse
                 self.view.window?.rootViewController = tabBarVC
                 self.view.window?.makeKeyAndVisible()
             }
@@ -103,6 +98,5 @@ extension LoginViewController: GIDSignInDelegate {
         } catch let signOutError as NSError {
           print ("Error signing out: %@", signOutError)
         }
-          
     }
 }

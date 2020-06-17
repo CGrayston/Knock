@@ -5,6 +5,7 @@
 //  Created by Christopher Grayston on 6/11/20.
 //  Copyright © 2020 Christopher Grayston. All rights reserved.
 //
+import Foundation
 
 protocol HomePageViewModelProtocol {
     var categories: Dynamic<[String]> { get }
@@ -19,21 +20,49 @@ protocol HomePageViewModelProtocol {
 class HomePageViewModel: HomePageViewModelProtocol {
     
     // MARK: - Dependencies
-    //let homePageUseCase: HomePageUseCase
-    //let categoryUseCase: CategoryUseCase
+    let selectedDateUseCase: SelectedDateUseCase
+    let workDayUseCase: WorkDayUseCase
+    
+    // MARK: - Properties
+    // TODO
+    //var workCells: Dynamic<[Category]>
+    //var categoryCells: Dynamic<[Category]>
     
     var categories: Dynamic<[String]>
     var error: Dynamic<String>
     
     // MARK: - Init
-    init() {
-        //self.homePageUseCase = homePageUseCase
-        //self.categoryUseCase = categoryUseCase
-        self.categories = Dynamic([String]())
+    init(selectedDateUseCase: SelectedDateUseCase, workDayUseCase: WorkDayUseCase) {
+        self.selectedDateUseCase = selectedDateUseCase
+        self.workDayUseCase = workDayUseCase
+        
+        // TODO change category type to get it's value from
+        
+        
+        self.categories = Dynamic([String]()) // c.loadcategories
         self.error = Dynamic("")
+        
+        fetchWorkDay()
+
+        // TODO
+        //self.workCells =
     }
     
+    // MARK: - Helper Methods
+    func fetchWorkDay() {
+        workDayUseCase.getOrCreateSelectedWorkDay(date: Date()) { (result) in
+            switch result {
+            case .success(let workDay):
+                // TODO save workday/(workCells,categoryCells)
+                print("TODO save", workDay)
+            case .failure(let error):
+                // TODO Send alert with error
+                print("TODO error", error)
+            }
+        }
+    }
     
+    // MARK: - Methods
     func nextDate() {
         // TODO - Get data for next selected date --> Change categories to this information
         categories.value?.append("Something")

@@ -7,22 +7,36 @@
 //
 
 import UIKit
+import Firebase
 
 class TabBarViewController: UITabBarController {
     
-    var user: User?
+    var userResponse: UserResponse?
+    var workDay: WorkDayResponse?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Set up realmServices data model
-        //let realmServices = RealmServices()
+        // Unwrap user
+        guard let userResponse = userResponse else {
+            fatalError("No user, bypassed login screen")
+        }
         
-        // Inject realmServices to HomePage
+        // Repositories
+        let ref: DatabaseReference = Database.database().reference()
+        let workDayRepository = WorkDayRepository()
+        
+        // Use cases
+        let selectedDateUseCase = SelectedDateUseCase(user: userResponse, workDay: workDay)
+        let workDayUseCase = WorkDayUseCase(workDayRepository: workDayRepository, user: userResponse, workDay: workDay)
+        
+        // Set up what needs to be injected to all pages
+        let homePageViewModel = HomePageViewModel(selectedDateUseCase: selectedDateUseCase, workDayUseCase: workDayUseCase)
+        
+        // Inject homePageViewModel to HomePage
         let navController = self.viewControllers![0] as! UINavigationController
         let navVC = navController.topViewController as! HomePageTableViewController
-        navVC.user = user
-        navVC.viewModel = HomePageViewModel()
+        navVC.viewModel = homePageViewModel
         
         // Inject realmServices in TimesheetViewController
         let timesheetNavigationVC = self.viewControllers![1] as! UINavigationController

@@ -18,7 +18,7 @@ class SplashViewController: UIViewController {
     var ref: DatabaseReference!
     
     // Data Injection
-    var user: User?
+    var userResponse: UserResponse?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +36,7 @@ class SplashViewController: UIViewController {
             // Set tabBar as root view controller
             dispatchGroup.notify(queue: .main) {
                 let tabBarVC = self.storyboard?.instantiateViewController(identifier: "TabBarVC") as? TabBarViewController
-                tabBarVC?.user = self.user
+                tabBarVC?.userResponse = self.userResponse
                 self.view.window?.rootViewController = tabBarVC
                 self.view.window?.makeKeyAndVisible()
             }
@@ -57,7 +57,7 @@ class SplashViewController: UIViewController {
         }
         dispatchGroup.enter()
         self.ref.child("users").child(currentUser.uid).observe(DataEventType.value) { (snapshot) in
-            self.user = Mapper<User>().map(JSONObject: snapshot.value)
+            self.userResponse = Mapper<UserResponse>().map(JSONObject: snapshot.value)
             self.dispatchGroup.leave()
         }
     }
